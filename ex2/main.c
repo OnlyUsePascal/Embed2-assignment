@@ -13,7 +13,7 @@ void sendCharacter(unsigned char temp);
 
 #define HXT_STATUS 1<<0
 #define PLL_STATUS 1<<2
-#define SIGNAL_LENGTH 4
+#define SIGNAL_LENGTH 3
 
 char s[SIGNAL_LENGTH] = "G06";
 
@@ -40,8 +40,6 @@ int main(void) {
 				} else {
           PC->DOUT |= (0b11 << 12);
 				}
-
-        // CLK_SysTickDelay(2000000);
         CLK_SysTickDelay(10);
     }
 }
@@ -52,7 +50,6 @@ int main(void) {
 void sendMessage(void) {
   for (int i = 0; i < SIGNAL_LENGTH; i++) {
     sendCharacter(s[i]);
-    CLK_SysTickDelay(5e5); // Delay 0.5s
   }
 }
 
