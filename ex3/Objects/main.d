@@ -26,4 +26,7 @@
   C:\Keil_v5\Library\StdDriver\Include\PS2.h \
   C:\Keil_v5\Library\StdDriver\Include\CLK.h \
   C:\Keil_v5\Library\StdDriver\Include\ACMP.h \
-  C:\Keil_v5\Library\NUC1xx-LB_002\Include\LCD.h
+  C:\Keil_v5\Library\NuMakerLib\Include\MCU_init.h \
+  C:\Keil_v5\Library\NuMakerLib\Include\SYS_init.h \
+  C:\Keil_v5\Library\NUC1xx-LB_002\Include\LCD.h \
+  C:\Keil_v5\Library\NuMakerLib\Include\Draw2D.h
